@@ -1,10 +1,13 @@
-document.querySelector("textarea").addEventListener("keyup", function () {
-    let div = document.querySelector("div")
 
-    if (this.value = ! "") {
-        div.innerHTML = this.value
+document.querySelector("textarea").addEventListener("keyup", function (event) {
+    const log = document.querySelector("div#log")
+    if (this.value != "") {
+        log.innerHTML = this.value
+        changeCursor(event)
     }
     else {
-        div.innerHTML = "start typing"
+        log.innerHTML = "start typing"
     }
 })
+
+

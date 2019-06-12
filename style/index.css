@@ -1,3 +1,62 @@
 body{
-    
+    /* font-size: 116px; */
+    line-height: 1.25;
+    text-transform: lowercase;
+    word-break: break-word;
+
+    background-color: white;
+    color: black;
+}
+
+textarea{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 0;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.img{
+    position: absolute;
+    top: 500px;
+    left: 500px;
+    transform: translate(-50%, -50%);
+
+    border: 1px solid blue;
+    background-color: rgba(0, 0, 255, 0.5);
+    width: 100px;
+    height: 100px;
+    text-align: center;
+
+    animation: fadein 0.4s;
+}
+
+.img:hover{
+    z-index: 1;
+}
+
+div#cursor{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    /* background-image: url(01.png); */
+}
+
+div#log{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border: 1px solid #00f;
+    padding: 10px 30px;ads
 }
